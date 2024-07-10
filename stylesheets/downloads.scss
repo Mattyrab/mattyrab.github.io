@@ -1,6 +1,6 @@
 @import "relative_helpers.scss";
 
-h1 {
+.side-navbar-header {
     color: white;
     text-align: center;
     font-family:"Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
@@ -13,10 +13,6 @@ h2 {
 
 p {
     margin: auto;
-}
-
-.side-navbar {
-    
 }
 
 .side-navbar-list {
@@ -47,34 +43,106 @@ p {
 
 
 @media (max-width: 576px) {
+    .side-navbar-header {
+        font-size: 1.2rem * 0.5;
+    }
+
+    h2 {
+        padding: (1rem * 0.5) 0;
+        font-size: 1.5rem * 0.5;
+    }
+
+    p {
+        font-size: 1.25rem * 0.5;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 0.5;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 0.5;
+    }
+
     footer {
         font-size: 0.8rem * 0.5;
     }
 }
 
 @media (min-width: 576px) {  
+    .side-navbar-header {
+        font-size: 1.2rem * 0.6;
+    }
+
+    h2 {
+        padding: (1rem * 0.6) 0;
+        font-size: 1.5rem * 0.6;
+    }
+
+    p {
+        font-size: 1.25rem * 0.6;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 0.6;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 0.6;
+    }
+
     footer {
         font-size: 0.8rem * 0.6;
     }
 }
 
 @media (min-width: 768px) {
+    .side-navbar-header {
+        font-size: 1.2rem * 0.77;
+    }
+
+    h2 {
+        padding: (1rem * 0.77) 0;
+        font-size: 1.5rem * 0.77;
+    }
+
+    p {
+        font-size: 1.25rem * 0.77;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 0.77;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 0.77;
+    }
+
     footer {
         font-size: 0.8rem * 0.77;
     }
 }
 
 @media (min-width: 992px) {
-    h1 {
+    .side-navbar-header {
         font-size: 1.2rem;
     }
 
     h2 {
         padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
     }
 
     .side-navbar {
-  
+        padding-bottom: 22.5rem;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem;
     }
 
     footer {
@@ -82,25 +150,190 @@ p {
     }
 } 
 
+@media (min-width: 1200px){
+    .side-navbar-header {
+        font-size: 1.2rem * 1.2;
+    }
+
+    h2 {
+        padding: (1rem * 1.2) 0;
+        font-size: 1.5rem * 1.2;
+    }
+
+    p {
+        font-size: 1.25rem * 1.2;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 1.2;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 1.2;
+    }
+
+    footer {
+        font-size: 0.8rem * 1.2;
+    }
+}
+
 @media (min-width: 1400px){
+    .side-navbar-header {
+        font-size: 1.2rem * 1.4;
+    }
+
+    h2 {
+        padding: (1rem * 1.4) 0;
+        font-size: 1.5rem * 1.4;
+    }
+
+    p {
+        font-size: 1.25rem * 1.4;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 1.4;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 1.4;
+    }
+
     footer {
         font-size: 0.8rem * 1.4;
     }
 }
 
+@media (min-width: 1600px){
+    .side-navbar-header {
+        font-size: 1.2rem * 1.6;
+    }
+
+    h2 {
+        padding: (1rem * 1.6) 0;
+        font-size: 1.5rem * 1.6;
+    }
+
+    p {
+        font-size: 1.25rem * 1.6;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 1.6;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 1.6;
+    }
+
+    footer {
+        font-size: 0.8rem * 1.6;
+    }
+}
+
+@media (min-width: 1800px){
+    .side-navbar-header {
+        font-size: 1.2rem * 1.8;
+    }
+
+    h2 {
+        padding: (1rem * 1.8) 0;
+        font-size: 1.5rem * 1.8;
+    }
+
+    p {
+        font-size: 1.25rem * 1.8;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 1.8;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 1.8;
+    }
+
+    footer {
+        font-size: 0.8rem * 1.8;
+    }
+}
+
 @media (min-width: 2000px){
+    .side-navbar-header {
+        font-size: 1.2rem * 2;
+    }
+
+    h2 {
+        padding: (1rem * 2) 0;
+        font-size: 1.5rem * 2;
+    }
+
+    p {
+        font-size: 1.25rem * 2;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 2;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 2;
+    }
+
     footer {
         font-size: 0.8rem * 2;
     }
 }
 
 @media (min-width: 2200px){
+    .side-navbar-header {
+        font-size: 1.2rem * 2.2;
+    }
+
+    h2 {
+        padding: (1rem * 2.2) 0;
+        font-size: 1.5rem * 2.2;
+    }
+
+    p {
+        font-size: 1.25rem * 2.2;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 2.2;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 2.2;
+    }
+
     footer {
         font-size: 0.8rem * 2.2;
     }
 }
 
 @media (min-width: 2424px){
+    .side-navbar-header {
+        font-size: 1.2rem * 2.4;
+    }
+
+    h2 {
+        padding: (1rem * 2.4) 0;
+        font-size: 1.5rem * 2.4;
+    }
+
+    p {
+        font-size: 1.25rem * 2.4;
+    }
+
+    .side-navbar {
+        padding-bottom: 22.5rem * 2.4;
+    }
+
+    .side-navbar-item {
+        font-size: 1rem * 2.4;
+    }
+
     footer {
         font-size: 0.8rem * 2.4;
     }

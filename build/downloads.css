@@ -4352,7 +4352,7 @@
   word-wrap: break-word !important;
   word-break: break-word !important; }
 
-h1 {
+.side-navbar-header {
   color: white;
   text-align: center;
   font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
@@ -4382,33 +4382,212 @@ p {
   row-gap: 10px; }
 
 @media (max-width: 576px) {
+  .side-navbar-header {
+    font-size: 0.6rem; }
+
+  h2 {
+    padding: 0.5rem 0;
+    font-size: 0.75rem; }
+
+  p {
+    font-size: 0.625rem; }
+
+  .side-navbar {
+    padding-bottom: 11.25rem; }
+
+  .side-navbar-item {
+    font-size: 0.5rem; }
+
   footer {
     font-size: 0.4rem; } }
 @media (min-width: 576px) {
+  .side-navbar-header {
+    font-size: 0.72rem; }
+
+  h2 {
+    padding: 0.6rem 0;
+    font-size: 0.9rem; }
+
+  p {
+    font-size: 0.75rem; }
+
+  .side-navbar {
+    padding-bottom: 13.5rem; }
+
+  .side-navbar-item {
+    font-size: 0.6rem; }
+
   footer {
     font-size: 0.48rem; } }
 @media (min-width: 768px) {
+  .side-navbar-header {
+    font-size: 0.924rem; }
+
+  h2 {
+    padding: 0.77rem 0;
+    font-size: 1.155rem; }
+
+  p {
+    font-size: 0.9625rem; }
+
+  .side-navbar {
+    padding-bottom: 17.325rem; }
+
+  .side-navbar-item {
+    font-size: 0.77rem; }
+
   footer {
     font-size: 0.616rem; } }
 @media (min-width: 992px) {
-  h1 {
+  .side-navbar-header {
     font-size: 1.2rem; }
 
   h2 {
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    font-size: 1.5rem; }
+
+  p {
+    font-size: 1.25rem; }
+
+  .side-navbar {
+    padding-bottom: 22.5rem; }
+
+  .side-navbar-item {
+    font-size: 1rem; }
 
   footer {
     font-size: 0.8rem; } }
+@media (min-width: 1200px) {
+  .side-navbar-header {
+    font-size: 1.44rem; }
+
+  h2 {
+    padding: 1.2rem 0;
+    font-size: 1.8rem; }
+
+  p {
+    font-size: 1.5rem; }
+
+  .side-navbar {
+    padding-bottom: 27rem; }
+
+  .side-navbar-item {
+    font-size: 1.2rem; }
+
+  footer {
+    font-size: 0.96rem; } }
 @media (min-width: 1400px) {
+  .side-navbar-header {
+    font-size: 1.68rem; }
+
+  h2 {
+    padding: 1.4rem 0;
+    font-size: 2.1rem; }
+
+  p {
+    font-size: 1.75rem; }
+
+  .side-navbar {
+    padding-bottom: 31.5rem; }
+
+  .side-navbar-item {
+    font-size: 1.4rem; }
+
   footer {
     font-size: 1.12rem; } }
+@media (min-width: 1600px) {
+  .side-navbar-header {
+    font-size: 1.92rem; }
+
+  h2 {
+    padding: 1.6rem 0;
+    font-size: 2.4rem; }
+
+  p {
+    font-size: 2rem; }
+
+  .side-navbar {
+    padding-bottom: 36rem; }
+
+  .side-navbar-item {
+    font-size: 1.6rem; }
+
+  footer {
+    font-size: 1.28rem; } }
+@media (min-width: 1800px) {
+  .side-navbar-header {
+    font-size: 2.16rem; }
+
+  h2 {
+    padding: 1.8rem 0;
+    font-size: 2.7rem; }
+
+  p {
+    font-size: 2.25rem; }
+
+  .side-navbar {
+    padding-bottom: 40.5rem; }
+
+  .side-navbar-item {
+    font-size: 1.8rem; }
+
+  footer {
+    font-size: 1.44rem; } }
 @media (min-width: 2000px) {
+  .side-navbar-header {
+    font-size: 2.4rem; }
+
+  h2 {
+    padding: 2rem 0;
+    font-size: 3rem; }
+
+  p {
+    font-size: 2.5rem; }
+
+  .side-navbar {
+    padding-bottom: 45rem; }
+
+  .side-navbar-item {
+    font-size: 2rem; }
+
   footer {
     font-size: 1.6rem; } }
 @media (min-width: 2200px) {
+  .side-navbar-header {
+    font-size: 2.64rem; }
+
+  h2 {
+    padding: 2.2rem 0;
+    font-size: 3.3rem; }
+
+  p {
+    font-size: 2.75rem; }
+
+  .side-navbar {
+    padding-bottom: 49.5rem; }
+
+  .side-navbar-item {
+    font-size: 2.2rem; }
+
   footer {
     font-size: 1.76rem; } }
 @media (min-width: 2424px) {
+  .side-navbar-header {
+    font-size: 2.88rem; }
+
+  h2 {
+    padding: 2.4rem 0;
+    font-size: 3.6rem; }
+
+  p {
+    font-size: 3rem; }
+
+  .side-navbar {
+    padding-bottom: 54rem; }
+
+  .side-navbar-item {
+    font-size: 2.4rem; }
+
   footer {
     font-size: 1.92rem; } }
 

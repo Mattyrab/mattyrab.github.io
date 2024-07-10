@@ -4379,7 +4379,8 @@ footer {
 
 .navbar-header {
   color: white;
-  margin: 0; }
+  margin: 0;
+  text-decoration: none; }
 
 .navbar-list {
   list-style-type: none;
