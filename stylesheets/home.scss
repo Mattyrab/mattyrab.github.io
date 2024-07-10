@@ -1,0 +1,155 @@
+@import 'relative_helpers.scss';
+
+.body-content-grid {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+}
+
+.article-item {
+    text-align: center;
+    @extend .d-flex;
+    @extend .justify-content-center;
+}
+
+figure {
+    display: table;
+    width: min-content;
+    height: min-content;
+    margin: 0;
+
+    caption-side: bottom;
+}
+
+.figure-img {
+    display: block;
+}
+  
+figcaption {
+    color:aliceblue;
+    text-decoration: none;
+
+    padding-top: 1rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    font-stretch: expanded;
+
+}
+
+//Phone display
+
+@media (max-width: 576px) {
+    .article-item {
+        height: 200px;
+    }
+
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr);
+        row-gap: 1.5rem;
+        padding-top: 1.33rem;
+    }
+
+    figure {
+        scale: 63%;
+    }
+}
+
+@media (min-width: 576px) {  
+    .article-item {
+        height: 220px;
+    }
+    
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr);
+        row-gap: 1.25rem;
+        padding-top: 1.66rem;
+    }
+
+    figure {
+        scale: 70%;
+    }
+}
+
+@media (min-width: 768px) {
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr);
+        row-gap: 2.75rem;
+        padding-top: 2rem;
+    }
+
+    figure {
+        scale: 80%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    }
+
+    figure {
+        scale: 62%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    }
+
+    figure {
+        scale: 66%;
+    }
+} 
+
+@media (min-width: 1400px){
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    }
+
+    figure {
+        scale: 80%;
+    }
+
+}
+
+@media (min-width: 1600px){
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+        row-gap: 4.5rem;
+        padding-top: 3.2rem;
+    }
+
+    figure {
+        scale: 85%;
+    }
+
+}
+
+@media (min-width: 1800px){
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+        row-gap: 5rem;
+        padding-top: 3.5rem;
+    }
+
+    figure {
+        scale: 90%;
+    }
+}
+
+@media (min-width: 2424px){
+    .body-content-grid {
+        grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+        row-gap: 6rem;
+        padding-top: 4rem;
+    }
+
+    .figure-img  {
+        scale: 110%;
+    }
+
+}

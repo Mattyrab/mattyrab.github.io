@@ -1,0 +1,440 @@
+@import 'relative_helpers.scss';
+
+article {
+    color: white;
+    font-family:"Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.thumbnail img{
+    width: 50%;
+    @extend .mx-auto;
+}
+
+.description {
+    width: 70%;
+    @extend .mx-auto;
+
+    background: rgba(58, 62, 71, 0.5);
+}
+
+.container {
+    width: 50%;
+    @extend .mx-auto;
+
+    text-decoration: none;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+
+    grid-template-areas: 
+      "store-link download-link"
+      "community-link guides-link"; 
+  }
+
+.store-link { grid-area: store-link; }
+.download-link { grid-area: download-link; }
+.community-link { grid-area: community-link; }
+.guides-link { grid-area: guides-link; }
+
+.link {
+    background-color: rgb(189, 189, 189);
+    
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(100, 100, 100);
+    color: black;
+}
+
+@media (max-width: 576px) {
+    footer {
+        font-size: 0.8rem * 0.5;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 0.5;
+        padding-bottom: 2rem * 0.5;
+    }
+
+    .description {
+        padding: 2rem 5rem * 0.5;
+        font-size: 1rem * 0.5;
+        margin-top: 2rem * 0.5;
+        border-radius: 0.8rem * 0.5;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 0.5;
+        margin: 0 0 1.5rem 0 * 0.5;
+    }
+
+    .container {
+        margin-top: 3rem * 0.5;
+        column-gap: 2rem * 0.5;
+        row-gap: 2rem * 0.5;
+    }
+
+    .link {
+        padding-top: 1rem * 0.5;
+        padding-bottom: 1rem * 0.5;
+        border-radius: 0.3rem * 0.5;
+        font-size: 1.25rem * 0.5;
+    }
+}
+
+@media (min-width: 576px) {  
+    footer {
+        font-size: 0.8rem * 0.6;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 0.6;
+        padding-bottom: 2rem * 0.6;
+    }
+
+    .description {
+        padding: 2rem 5rem * 0.6;
+        font-size: 1rem * 0.6;
+        margin-top: 2rem * 0.6;
+        border-radius: 0.8rem * 0.6;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 0.6;
+        margin: 0 0 1.5rem 0 * 0.6;
+    }
+
+    .container {
+        margin-top: 3rem * 0.6;
+        column-gap: 2rem * 0.6;
+        row-gap: 2rem * 0.6;
+    }
+
+    .link {
+        padding-top: 1rem * 0.6;
+        padding-bottom: 1rem * 0.6;
+        border-radius: 0.3rem * 0.6;
+        font-size: 1.25rem * 0.6;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 0.8rem * 0.77;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 0.77;
+        padding-bottom: 2rem * 0.77;
+    }
+
+    .description {
+        padding: 2rem 5rem * 0.77;
+        font-size: 1rem * 0.77;
+        margin-top: 2rem * 0.77;
+        border-radius: 0.8rem * 0.77;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 0.77;
+        margin: 0 0 1.5rem 0 * 0.77;
+    }
+
+    .container {
+        margin-top: 3rem * 0.77;
+        column-gap: 2rem * 0.77;
+        row-gap: 2rem * 0.77;
+    }
+
+    .link {
+        padding-top: 1rem * 0.77;
+        padding-bottom: 1rem * 0.77;
+        border-radius: 0.3rem * 0.77;
+        font-size: 1.25rem * 0.77;
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem;
+        padding-bottom: 2rem;
+    }
+
+    .description {
+        padding: 2rem 5rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+        border-radius: 0.8rem;
+    }
+
+    .description-header {
+        font-size: 1.8rem;
+        margin: 0 0 1.5rem 0;
+    }
+
+    .container {
+        margin-top: 3rem;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-radius: 0.3rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer {
+        font-size: 0.81rem * 1.2;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 1.2;
+        padding-bottom: 2rem * 1.2;
+    }
+
+    .description {
+        padding: 2rem 5rem * 1.2;
+        font-size: 1rem * 1.2;
+        margin-top: 2rem * 1.2;
+        border-radius: 0.8rem * 1.2;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 1.2;
+        margin: 0 0 1.5rem 0 * 1.2;
+    }
+
+    .container {
+        margin-top: 3rem * 1.2;
+        column-gap: 2rem * 1.2;
+        row-gap: 2rem * 1.2;
+    }
+
+    .link {
+        padding-top: 1rem * 1.2;
+        padding-bottom: 1rem * 1.2;
+        border-radius: 0.3rem * 1.2;
+        font-size: 1.25rem * 1.2;
+    }
+} 
+
+@media (min-width: 1400px){
+    footer {
+        font-size: 0.8rem * 1.4;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 1.4;
+        padding-bottom: 2rem * 1.4;
+    }
+
+    .description {
+        padding: 2rem 5rem * 1.4;
+        font-size: 1rem * 1.4;
+        margin-top: 2rem * 1.4;
+        border-radius: 0.8rem * 1.4;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 1.4;
+        margin: 0 0 1.5rem 0 * 1.4;
+    }
+
+    .container {
+        margin-top: 3rem * 1.4;
+        column-gap: 2rem * 1.4;
+        row-gap: 2rem * 1.4;
+    }
+
+    .link {
+        padding-top: 1rem * 1.4;
+        padding-bottom: 1rem * 1.4;
+        border-radius: 0.3rem * 1.4;
+        font-size: 1.25rem * 1.4;
+    }
+}
+
+@media (min-width: 1600px){
+    footer {
+        font-size: 0.8rem * 1.6;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 1.6;
+        padding-bottom: 2rem * 1.6;
+    }
+
+    .description {
+        padding: 2rem 5rem * 1.6;
+        font-size: 1rem * 1.6;
+        margin-top: 2rem * 1.6;
+        border-radius: 0.8rem * 1.6;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 1.6;
+        margin: 0 0 1.5rem 0 * 1.6;
+    }
+
+    .container {
+        margin-top: 3rem * 1.6;
+        column-gap: 2rem * 1.6;
+        row-gap: 2rem * 1.6;
+    }
+
+    .link {
+        padding-top: 1rem * 1.6;
+        padding-bottom: 1rem * 1.6;
+        border-radius: 0.3rem * 1.6;
+        font-size: 1.25rem * 1.6;
+    }
+}
+
+@media (min-width: 1800px){
+    footer {
+        font-size: 0.8rem * 1.8;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 1.8;
+        padding-bottom: 2rem * 1.8;
+    }
+
+    .description {
+        padding: 2rem 5rem * 1.8;
+        font-size: 1rem * 1.8;
+        margin-top: 2rem * 1.8;
+        border-radius: 0.8rem * 1.8;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 1.8;
+        margin: 0 0 1.5rem 0 * 1.8;
+    }
+
+    .container {
+        margin-top: 3rem * 1.8;
+        column-gap: 2rem * 1.8;
+        row-gap: 2rem * 1.8;
+    }
+
+    .link {
+        padding-top: 1rem * 1.8;
+        padding-bottom: 1rem * 1.8;
+        border-radius: 0.3rem * 1.8;
+        font-size: 1.25rem * 1.8;
+    }
+}
+
+@media (min-width: 2000px){
+    footer {
+        font-size: 0.8rem * 2;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 2;
+        padding-bottom: 2rem * 2;
+    }
+
+    .description {
+        padding: 2rem 5rem * 2;
+        font-size: 1rem * 2;
+        margin-top: 2rem * 2;
+        border-radius: 0.8rem * 2;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 2;
+        margin: 0 0 1.5rem 0 * 2;
+    }
+
+    .container {
+        margin-top: 3rem * 2;
+        column-gap: 2rem * 2;
+        row-gap: 2rem * 2;
+    }
+
+    .link {
+        padding-top: 1rem * 2;
+        padding-bottom: 1rem * 2;
+        border-radius: 0.3rem * 2;
+        font-size: 1.25rem * 2;
+    }
+}
+
+@media (min-width: 2200px){
+    footer {
+        font-size: 0.8rem * 2.2;
+    }
+
+    .thumbnail {
+        padding-top: 2.1rem * 2.2;
+        padding-bottom: 2rem * 2.2;
+    }
+
+    .description {
+        padding: 2rem 5rem * 2.2;
+        font-size: 1rem * 2.2;
+        margin-top: 2rem * 2.2;
+        border-radius: 0.8rem * 2.2;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 2.2;
+        margin: 0 0 1.5rem 0 * 2.2;
+    }
+
+    .container {
+        margin-top: 3rem * 2.2;
+        column-gap: 2rem * 2.2;
+        row-gap: 2rem * 2.2;
+    }
+
+    .link {
+        padding-top: 1rem * 2.2;
+        padding-bottom: 1rem * 2.2;
+        border-radius: 0.3rem * 2.2;
+        font-size: 1.25rem * 2.2;
+    }
+}
+
+@media (min-width: 2424px){
+    footer {
+        font-size: 0.8rem * 2.4;
+    }
+
+    .description {
+        padding: 2rem 5rem * 2.4;
+        font-size: 1rem * 2.4;
+        margin-top: 2rem * 2.4;
+        border-radius: 0.8rem * 2.4;
+    }
+
+    .description-header {
+        font-size: 1.8rem * 2.4;
+        margin: 0 0 1.5rem 0 * 2.4;
+    }
+
+    .container {
+        margin-top: 3rem * 2.4;
+        column-gap: 2rem * 2.4;
+        row-gap: 2rem * 2.4;
+    }
+
+    .link {
+        padding-top: 1rem * 2.4;
+        padding-bottom: 1rem * 2.4;
+        border-radius: 0.3rem * 2.4;
+        font-size: 1.25rem * 2.4;
+    }
+}

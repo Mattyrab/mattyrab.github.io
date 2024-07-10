@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>  
+        <title>About & Contact</title>
+        <link rel="stylesheet" href="build/application.css">
+        <link rel="stylesheet" href="build/about_contact.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+    </head>
+    <body>
+        <header>
+            <div class="navbar d-flex align-items-center">
+                <a href="http://127.0.0.1:5500/home.html">
+                    <h1 class="navbar-header">Plasma Library</h1>
+                </a>
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a class="navbar-item-a" href="http://127.0.0.1:5500/home.html">Home</a></li>
+                    <li class="navbar-item"><a class="navbar-item-a" href="http://127.0.0.1:5500/downloads.html">Downloads</a></li>
+                    <li class="navbar-item"><a class="navbar-item-a active-item" href="http://127.0.0.1:5500/about_contact.html">About & Contact</a></li>
+                </ul> 
+            </div>
+        </header>
+        <main>
+            <section class="about_section">
+                <article class="about_article">
+                    <h1 class="about_header">ABOUT</h1>
+                    <p class="about_paragraph">
+                        Plasma Library is designed with one goal in mind...
+                    </p>
+                    <p class="about_paragraph">
+                       Organizing all of your games into one major collection.
+                    </p>
+                    <p class="about_paragraph">
+                        Manage from anywhere and anytime.
+                     </p>
+                </article>
+            </section>
+            <br>
+            <section class="contact_section">
+                <article class="contact_article">
+                    <h1 class="contact_header">CONTACT</h1>
+                    <form>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname"><br>
+
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email"><br>
+
+                        <label for="mobile_region">Mobile Number:</label><br>
+                        <select id="mobile_region" name="mobile_region" type="selection">
+                        <option value="volvo">+41</option>
+                        <option value="saab">+39</option>
+                        <option value="fiat">+66</option>
+                        <option value="audi">+27</option>
+                        </select>
+                        <input type="tel" id="mobile_nr" name="mobile_nr"><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message"></textarea><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Plasma Forge Labs Inc
+            </p>
+        </footer>
+    </body>
+</html>
+    
