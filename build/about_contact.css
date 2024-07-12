@@ -4365,7 +4365,7 @@
 
 .about_paragraph {
   color: white;
-  font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif; }
+  font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif; }
 
 .contact_section {
   text-align: center;
@@ -4375,7 +4375,8 @@
   margin: auto; }
 
 form {
-  color: white; }
+  color: white;
+  font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif; }
 
 .contact_header {
   color: white;
