@@ -4360,20 +4360,21 @@
 .article-item {
   text-align: center; }
 
-figure {
+.thumbnail {
   display: table;
   width: min-content;
   height: min-content;
   margin: 0;
   caption-side: bottom; }
 
-.figure-img {
+.img {
   display: block; }
 
-figcaption {
+.caption {
+  display: block;
   color: aliceblue;
   text-decoration: none;
-  padding-top: 1rem;
+  padding-top: 0.7rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   font-stretch: expanded; }
@@ -4387,7 +4388,7 @@ figcaption {
     row-gap: 1.5rem;
     padding-top: 1.33rem; }
 
-  figure {
+  .thumbnail {
     scale: 63%; } }
 @media (min-width: 576px) {
   .article-item {
@@ -4398,7 +4399,7 @@ figcaption {
     row-gap: 1.25rem;
     padding-top: 1.66rem; }
 
-  figure {
+  .thumbnail {
     scale: 70%; } }
 @media (min-width: 768px) {
   .body-content-grid {
@@ -4406,25 +4407,25 @@ figcaption {
     row-gap: 2.75rem;
     padding-top: 2rem; }
 
-  figure {
+  .thumbnail {
     scale: 80%; } }
 @media (min-width: 992px) {
   .body-content-grid {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr); }
 
-  figure {
+  .thumbnail {
     scale: 62%; } }
 @media (min-width: 1200px) {
   .body-content-grid {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr); }
 
-  figure {
+  .thumbnail {
     scale: 66%; } }
 @media (min-width: 1400px) {
   .body-content-grid {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr); }
 
-  figure {
+  .thumbnail {
     scale: 80%; } }
 @media (min-width: 1600px) {
   .body-content-grid {
@@ -4432,7 +4433,7 @@ figcaption {
     row-gap: 4.5rem;
     padding-top: 3.2rem; }
 
-  figure {
+  .thumbnail {
     scale: 85%; } }
 @media (min-width: 1800px) {
   .body-content-grid {
@@ -4440,15 +4441,31 @@ figcaption {
     row-gap: 5rem;
     padding-top: 3.5rem; }
 
-  figure {
+  .thumbnail {
     scale: 90%; } }
+@media (min-width: 2000px) {
+  .body-content-grid {
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    row-gap: 5.5rem;
+    padding-top: 3.65rem; }
+
+  .thumbnail {
+    scale: 97.5%; } }
+@media (min-width: 2200px) {
+  .body-content-grid {
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    row-gap: 7rem;
+    padding-top: 3.85rem; }
+
+  .thumbnail {
+    scale: 105%; } }
 @media (min-width: 2424px) {
   .body-content-grid {
     grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
-    row-gap: 6rem;
+    row-gap: 8rem;
     padding-top: 4rem; }
 
-  .figure-img {
+  .thumbnail {
     scale: 110%; } }
 
 /*# sourceMappingURL=home.css.map */
